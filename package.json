@@ -1,0 +1,32 @@
+{
+  "name": "rescript-project-template",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "rescript",
+    "clean": "rescript clean -with-deps",
+    "start": "rescript build -w",
+    "dev": "concurrently \"parcel ./public/index.html\" \"bsb -make-world -w\" "
+  },
+  "keywords": [
+    "rescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/client": "^3.4.16",
+    "@reasonml-community/graphql-ppx": "^1.2.2",
+    "@rescript/react": "^0.10.3",
+    "bs-platform": "9.0.0",
+    "graphql": "^15.6.1",
+    "graphql-client-example-server": "1.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rescript": "*",
+    "rescript-apollo-client": "^2.2.0",
+    "subscriptions-transport-ws": "^0.9.19"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "parcel": "^2.0.0"
+  }
+}
